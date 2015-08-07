@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 from numpy import *
 import codecs
 import os
@@ -12,8 +14,8 @@ a=''
 for row in values:
     for value in row[::-1]: 
         if value:
-            a = a+"#"
+            a = a+'█'
         else:
-            a = a+" "
+            a = a+' '
     print(a)
-    a=""
+    a=''
